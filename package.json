@@ -1,8 +1,9 @@
 {
-  "name": "@wangeditor/editor-for-vue",
+  "name": "@wangeditor-next/editor-for-vue",
   "version": "5.1.12",
+  "private": false,
   "description": "wangEditor component for vue@next",
-  "author": "liuqh0609 <liuqh0609@163.com>",
+  "author": "cycleccc <ylf2991205548@qq.com>",
   "homepage": "http://www.wangeditor.com/",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
@@ -20,12 +21,13 @@
   "exports": {
     ".": {
       "import": "./dist/index.esm.js",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "types": "./dist/src/index.d.ts"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangeditor-team/wangEditor-for-vue3.git"
+    "url": "git+https://github.com/cycleccc/wangEditor-for-vue3.git"
   },
   "scripts": {
     "dev": "vite",
