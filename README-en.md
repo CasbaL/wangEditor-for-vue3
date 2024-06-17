@@ -12,8 +12,8 @@ based on the [wangEditor 5](https://www.wangeditor.com/v5/for-frame.html#vue3)
 ## Installation
 
 ```shell
-yarn add @wangeditor/editor
-yarn add @wangeditor/editor-for-vue@next
+yarn add @wangeditor-next/editor
+yarn add @wangeditor-next/editor-for-vue@next
 ```
 
 ## Usage

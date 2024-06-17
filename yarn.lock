@@ -1766,24 +1766,24 @@
   resolved "https://registry.npmjs.org/@vue/test-utils/-/test-utils-2.0.0-rc.16.tgz"
   integrity sha512-TubikDVkI2LuRKRPSLv3lYpbpvvucT2DIcGqfBVpvYs4W19u0EBTJEdmfwmSuLY7H1TyAr9Stur3PI1sWWvTGQ==
 
-"@wangeditor/basic-modules@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmmirror.com/@wangeditor/basic-modules/-/basic-modules-1.1.1.tgz#1ae0b11202b2ac319b4883e46f4d069ffce2f78d"
-  integrity sha512-tQl2Pw8M2g3CM+ESx2phzr9zSKeuFCM1AMBoPdnlbatU7Dnae0CsEB/b3C+gI0dIQzM2jh34yTmqgbbhrwuRLg==
+"@wangeditor-next/basic-modules@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@wangeditor-next/basic-modules/-/basic-modules-1.2.2.tgz#d745b46cd5b1ab06f381d63495d43cb971ac3a98"
+  integrity sha512-62AfDK/y/WaOrvUNEPoAh4wnWxkfrtagpm6/PSnrVCn1gHfKvyEDn+Dz04P5O31WqHkhPbOGgPbIGNISTIi93g==
   dependencies:
     is-url "^1.2.4"
 
-"@wangeditor/code-highlight@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmmirror.com/@wangeditor/code-highlight/-/code-highlight-1.0.2.tgz#df6bf7ac8d232c6afb0cb8189baa9f8d52feeded"
-  integrity sha512-SCtOcUxjKqIso/LSxGSOaYr3G6MC2En0gNTyHIMCG928T0fo0ufaqp/vIXKQzVL2Y+X/CSAOB2EbrFlgGvr0AQ==
+"@wangeditor-next/code-highlight@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@wangeditor-next/code-highlight/-/code-highlight-1.2.0.tgz#c0a75e80a324a0758b54b968ce6cc35602b9f3f2"
+  integrity sha512-CNteGYbifyDXxg3ygWBoSkg7bt5+MP+Nu9yysOhizWgjqyLeAo4eBuyurJpbCWbLa0PL2iTBqfWAaZd7/Fq+Nw==
   dependencies:
     prismjs "^1.23.0"
 
-"@wangeditor/core@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmmirror.com/@wangeditor/core/-/core-1.1.1.tgz#f749a7d65ad95dbffccdf4d6f11272be8134eb88"
-  integrity sha512-SrbvOGlONMNMOeFIJI7fC9x0/6T6LvQHTITPCqjgbCm2QF+POcrHzRKGQOqKCsyKi9UJz9hLsjsvJnvP10rxjQ==
+"@wangeditor-next/core@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@wangeditor-next/core/-/core-1.2.2.tgz#b0c02fa913a367add276c37917b5ff0927ec8cb7"
+  integrity sha512-0nBoGwHiiVQMpYaepw0aYt/Ir/8OO2BPnBjS6GypWrLmheOpzkLiZ6MRAoKtluqIpdAqMf6rCuqZdxjCNwrerw==
   dependencies:
     "@types/event-emitter" "^0.3.3"
     event-emitter "^0.3.5"
@@ -1792,20 +1792,20 @@
     scroll-into-view-if-needed "^2.2.28"
     slate-history "^0.66.0"
 
-"@wangeditor/editor@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.npmmirror.com/@wangeditor/editor/-/editor-5.1.1.tgz#009b11277de86a4052087d0428934e7d2dd30147"
-  integrity sha512-BtccuHFm0QvYunIhIu7tllQWkwppkmEkD3OJ5Mn+F0REPQ/Z3HiEXbtlss2t9c/kHO4CtiFwv2XD/k/VEg7taA==
+"@wangeditor-next/editor@^5.2.5":
+  version "5.2.5"
+  resolved "https://registry.npmjs.org/@wangeditor-next/editor/-/editor-5.2.5.tgz#e0a4a9f5cfce5f5de34bbd289036f96c47c884c8"
+  integrity sha512-ZMcR2XT0B3Uv4qLA+CXdxg9q9jR88Kl6804Ps9VlNYefCXlrdiYVH5webhAtDFFFoN9U+pYRJ/6RxJS8gEabLA==
   dependencies:
     "@uppy/core" "^2.1.1"
     "@uppy/xhr-upload" "^2.0.3"
-    "@wangeditor/basic-modules" "^1.1.1"
-    "@wangeditor/code-highlight" "^1.0.2"
-    "@wangeditor/core" "^1.1.1"
-    "@wangeditor/list-module" "^1.0.2"
-    "@wangeditor/table-module" "^1.1.0"
-    "@wangeditor/upload-image-module" "^1.0.1"
-    "@wangeditor/video-module" "^1.1.0"
+    "@wangeditor-next/basic-modules" "^1.2.2"
+    "@wangeditor-next/code-highlight" "^1.2.0"
+    "@wangeditor-next/core" "^1.2.2"
+    "@wangeditor-next/list-module" "^1.1.0"
+    "@wangeditor-next/table-module" "^1.2.0"
+    "@wangeditor-next/upload-image-module" "^1.1.0"
+    "@wangeditor-next/video-module" "^1.2.2"
     dom7 "^3.0.0"
     is-hotkey "^0.2.0"
     lodash.camelcase "^4.3.0"
@@ -1819,25 +1819,25 @@
     slate "^0.72.0"
     snabbdom "^3.1.0"
 
-"@wangeditor/list-module@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmmirror.com/@wangeditor/list-module/-/list-module-1.0.2.tgz#c9e57c4c34bbcc32df3a9030df2fda0bb4f77a39"
-  integrity sha512-VfENZEFvsLTiLxN/cj8cibFGy9NVV+/cfATTiLiH9ef+8lgKv8apttXYVlqIAfnlJLLuCk0cIm8c/zH+hbtrZg==
+"@wangeditor-next/list-module@^1.1.0":
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/@wangeditor-next/list-module/-/list-module-1.3.0.tgz#f0dc47c6449428ee0a685214f68c3800b0dc4cbf"
+  integrity sha512-n+tLJlfWbmVZSjSRwM/Mto1syN7IrOHONGZSd+sKUW4/jDZ1LLxUt65Ng8gs+1U+z3O9pdz6dW6VUigOL6ZX2w==
 
-"@wangeditor/table-module@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmmirror.com/@wangeditor/table-module/-/table-module-1.1.0.tgz#5cd4ebdd0500915c51793efd6227c43b5e185d77"
-  integrity sha512-QpjCXSzsXcsR0pEI5Pu28e8aYh9+lHcVV4TTmGV6lRGE/etQF3PHUZNGUlfhkCgmGPq+E7n/Whb4RpAM3PJVhw==
+"@wangeditor-next/table-module@^1.2.0":
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/@wangeditor-next/table-module/-/table-module-1.4.0.tgz#f6f7f4ed7e1197ed37043c2da6041091672e2a53"
+  integrity sha512-PdvO+BYof0pcN2CMKftExMfi1NUMWWxXZG2SALc1IklpRR1fcgLOmr4Og/Wo2u36QQrAz1Z2tD7NUo4m2ANgmw==
 
-"@wangeditor/upload-image-module@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmmirror.com/@wangeditor/upload-image-module/-/upload-image-module-1.0.1.tgz#a074518d73ce9c5cfd3e8ee56d1adf831996f142"
-  integrity sha512-vgUV4ENttTITblqtVuzleIq732OmzmzzgrIvX6b3GRGPSw5u8glJ/87tOEhvHjHECc4oFo18B7xzJ1GpBj79/w==
+"@wangeditor-next/upload-image-module@^1.1.0":
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/@wangeditor-next/upload-image-module/-/upload-image-module-1.3.0.tgz#5cfba31cec5c5bcfc7479543ab6c8844776e7916"
+  integrity sha512-M4QMhOcUYwsw3Op7WjfY49YbZc9CbCzkbdKMeXRbvp5RF7xo8j86xsMyANOhtcNgV6CP5MChkU1F0Ky04HZs0g==
 
-"@wangeditor/video-module@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmmirror.com/@wangeditor/video-module/-/video-module-1.1.0.tgz#664405b1eeef1e9ab09f84a50270a4394f885355"
-  integrity sha512-VR6x7Vk9ebvXtxCPwobiNiTGZGgqEzCVc6ViWlNH3v4jlDIeo/s7N7OCgpvELR7X/X7GHecBu7wySDkHIskB5w==
+"@wangeditor-next/video-module@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@wangeditor-next/video-module/-/video-module-1.2.2.tgz#88bc1b55cd25e30a6a570f9c561ac0b627bcf736"
+  integrity sha512-D/UZvPG401CgP8T4u8KwGgsD0+YOs0LhBtM2pc7ORDEvVcedoVmnn12X98Gn096MiN2KkgixUS8RHEH+OTe8ew==
 
 abab@^2.0.0:
   version "2.0.5"

@@ -13,8 +13,8 @@
 ## 安装
 
 ```shell
-yarn add @wangeditor/editor
-yarn add @wangeditor/editor-for-vue@next
+yarn add @wangeditor-next/editor
+yarn add @wangeditor-next/editor-for-vue@next
 ```
 
 ## 使用
