@@ -6,6 +6,7 @@
 import { onMounted, defineComponent, ref, PropType, toRaw, watch, shallowRef } from 'vue'
 import { createEditor, IEditorConfig, SlateDescendant, IDomEditor } from '@wangeditor-next/editor'
 import { genErrorInfo } from '../utils/create-info'
+type ExtractPropertyType<T, K extends keyof T> = T[K]
 
 export default defineComponent({
   props: {
@@ -33,6 +34,18 @@ export default defineComponent({
       type: String,
       default: '',
     },
+  },
+
+  emits: {
+    'update:modelValue': (val: string) => void 0,
+    onCreated: (editor: IDomEditor) => void 0,
+    onChange: (editor: IDomEditor) => void 0,
+    onDestroyed: (editor: IDomEditor) => void 0,
+    onMaxLength: (editor: IDomEditor) => void 0,
+    onFocus: (editor: IDomEditor) => void 0,
+    onBlur: (editor: IDomEditor) => void 0,
+    customAlert: (() => void 0) as ExtractPropertyType<IEditorConfig, 'customAlert'>,
+    customPaste: (editor: IDomEditor, event: ClipboardEvent, cb: (v: boolean) => void) => void 0,
   },
   setup(props, context) {
     const box = ref(null) // 编辑器容器
