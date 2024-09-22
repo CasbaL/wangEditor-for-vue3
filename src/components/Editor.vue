@@ -69,7 +69,7 @@ export default defineComponent({
         html: props.defaultHtml || props.modelValue || '',
         config: {
           ...props.defaultConfig,
-          onCreated(editor) {
+          onCreated(editor: IDomEditor) {
             editorRef.value = editor // 记录 editor 实例
 
             context.emit('onCreated', editor)
@@ -79,7 +79,7 @@ export default defineComponent({
               throw new Error(info)
             }
           },
-          onChange(editor) {
+          onChange(editor: IDomEditor) {
             const editorHtml = editor.getHtml()
             curValue.value = editorHtml // 记录当前内容
             context.emit('update:modelValue', editorHtml) // 触发 v-model 值变化
@@ -90,35 +90,35 @@ export default defineComponent({
               throw new Error(info)
             }
           },
-          onDestroyed(editor) {
+          onDestroyed(editor: IDomEditor) {
             context.emit('onDestroyed', editor)
             if (props.defaultConfig.onDestroyed) {
               const info = genErrorInfo('onDestroyed')
               throw new Error(info)
             }
           },
-          onMaxLength(editor) {
+          onMaxLength(editor: IDomEditor) {
             context.emit('onMaxLength', editor)
             if (props.defaultConfig.onMaxLength) {
               const info = genErrorInfo('onMaxLength')
               throw new Error(info)
             }
           },
-          onFocus(editor) {
+          onFocus(editor: IDomEditor) {
             context.emit('onFocus', editor)
             if (props.defaultConfig.onFocus) {
               const info = genErrorInfo('onFocus')
               throw new Error(info)
             }
           },
-          onBlur(editor) {
+          onBlur(editor: IDomEditor) {
             context.emit('onBlur', editor)
             if (props.defaultConfig.onBlur) {
               const info = genErrorInfo('onBlur')
               throw new Error(info)
             }
           },
-          customAlert(info, type) {
+          customAlert(info: any, type: any) {
             context.emit('customAlert', info, type)
             // @ts-ignore
             if (props.defaultConfig.customAlert) {
@@ -126,7 +126,7 @@ export default defineComponent({
               throw new Error(info)
             }
           },
-          customPaste: (editor, event): any => {
+          customPaste: (editor: IDomEditor, event: ClipboardEvent): any => {
             if (props.defaultConfig.customPaste) {
               const info = genErrorInfo('customPaste')
               throw new Error(info)
